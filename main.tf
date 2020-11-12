@@ -59,6 +59,9 @@ module "codepipeline" {
   tf_codepipeline_artifact_bucket_name = "mihir6598-terraform-artifact-bucket-name"
   tf_codepipeline_role_name            = "mihir6598-terraform-CodePipelineIamRole"
   tf_codepipeline_role_policy_name     = "mihir6598-terraform-CodePipelineIamRolePolicy"
+  git_owner                            = "mihir6598"
+  git_repo                             = "aws_codebuild_terraform_pipeline"
+  git_branch                           = "main"
   codebuild_terraform_plan_name        = module.codebuild.codebuild_terraform_plan_name
   codebuild_terraform_apply_name       = module.codebuild.codebuild_terraform_apply_name
 }

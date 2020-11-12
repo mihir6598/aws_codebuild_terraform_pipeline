@@ -16,3 +16,14 @@ variable "codebuild_terraform_plan_name" {
 variable "codebuild_terraform_apply_name" {
   description = "Terraform apply codebuild project name"
 }
+
+variable "git_owner" {
+  description = "Git userid"
+}
+
+variable "git_repo" {
+  description = "Git repo name"
+}
+variable "git_branch" {
+  description = "Git branch name"
+}

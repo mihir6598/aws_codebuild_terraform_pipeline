@@ -209,10 +209,11 @@ resource "aws_codepipeline" "tf_codepipeline" {
       output_artifacts = ["SourceArtifact"]
 
       configuration = {
-        Owner                = "mihir6598"
-        Repo                 = "mihir-test-terraform"
+        Owner                = var.git_owner
+        Repo                 = var.git_repo
         PollForSourceChanges = "false"
-        Branch               = "main"
+        Branch               = var.git_branch
+        OAuthToken           = "058d9f22df3aca3009fff6f2150298bca5683928"
       }
     }
   }
