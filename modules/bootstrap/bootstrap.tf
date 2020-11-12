@@ -142,19 +142,6 @@ resource "aws_iam_role_policy" "codebuild_iam_role_policy" {
     {
       "Effect": "Allow",
       "Action": [
-        "codecommit:BatchGet*",
-        "codecommit:BatchDescribe*",
-        "codecommit:Describe*",
-        "codecommit:EvaluatePullRequestApprovalRules",
-        "codecommit:Get*",
-        "codecommit:List*",
-        "codecommit:GitPull"
-      ],
-      "Resource": "${var.terraform_codecommit_repo_arn}"
-    },
-    {
-      "Effect": "Allow",
-      "Action": [
         "iam:Get*",
         "iam:List*"
       ],

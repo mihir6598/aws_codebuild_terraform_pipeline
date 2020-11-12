@@ -17,9 +17,6 @@ variable "codebuild_iam_role_name" {
 variable "codebuild_iam_role_policy_name" {
   description = "Name for IAM policy used by CodeBuild"
 }
-variable "terraform_codecommit_repo_arn" {
-  description = "Terraform CodeCommit git repo ARN"
-}
 variable "tf_codepipeline_artifact_bucket_arn" {
   description = "Codepipeline artifact bucket ARN"
 }

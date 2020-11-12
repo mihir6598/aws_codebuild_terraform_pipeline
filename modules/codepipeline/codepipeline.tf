@@ -203,14 +203,16 @@ resource "aws_codepipeline" "tf_codepipeline" {
     action {
       name             = "Source"
       category         = "Source"
-      owner            = "AWS"
-      provider         = "CodeCommit"
+      owner            = "ThirdParty"
+      provider         = "GitHub"
       version          = "1"
       output_artifacts = ["SourceArtifact"]
 
       configuration = {
-        RepositoryName = var.terraform_codecommit_repo_name
-        BranchName     = "master"
+        Owner                = "mihir6598"
+        Repo                 = "mihir-test-terraform"
+        PollForSourceChanges = "false"
+        Branch               = "main"
       }
     }
   }

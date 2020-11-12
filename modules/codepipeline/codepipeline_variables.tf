@@ -10,9 +10,6 @@ variable "tf_codepipeline_role_policy_name" {
 variable "tf_codepipeline_name" {
   description = "Terraform CodePipeline Name"
 }
-variable "terraform_codecommit_repo_name" {
-  description = "Terraform CodeCommit repo name"
-}
 variable "codebuild_terraform_plan_name" {
   description = "Terraform plan codebuild project name"
 }
