@@ -14,4 +14,4 @@ phases:
       - terraform --version
       - terraform init -input=false
       - terraform validate
-      - git_token=$ACCESS_TOKEN terraform plan -lock=false -input=false
+      - terraform plan -lock=false -input=false

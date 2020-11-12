@@ -13,4 +13,4 @@ phases:
     commands:
       - terraform --version
       - terraform init -input=false
-      - git_token=$ACCESS_TOKEN terraform apply -auto-approve -input=false
+      - terraform apply -auto-approve -input=false
