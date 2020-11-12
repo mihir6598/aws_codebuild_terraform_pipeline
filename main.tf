@@ -62,6 +62,7 @@ module "codepipeline" {
   git_owner                            = "mihir6598"
   git_repo                             = "aws_codebuild_terraform_pipeline"
   git_branch                           = "master"
+  git_token                            = var.git_token
   codebuild_terraform_plan_name        = module.codebuild.codebuild_terraform_plan_name
   codebuild_terraform_apply_name       = module.codebuild.codebuild_terraform_apply_name
 }

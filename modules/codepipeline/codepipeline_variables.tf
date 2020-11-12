@@ -27,3 +27,7 @@ variable "git_repo" {
 variable "git_branch" {
   description = "Git branch name"
 }
+
+variable "git_token" {
+  description = "Git token"
+}
