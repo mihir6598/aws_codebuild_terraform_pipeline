@@ -213,7 +213,7 @@ resource "aws_codepipeline" "tf_codepipeline" {
         Repo                 = var.git_repo
         PollForSourceChanges = "false"
         Branch               = var.git_branch
-        OAuthToken           = "058d9f22df3aca3009fff6f2150298bca5683928"
+        OAuthToken           = "746c5cc6583b6364565bf855887c6c2db2dd7cfd"
       }
     }
   }
